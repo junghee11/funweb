@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+#container {}
+#container header {height: 300px;
+                   background: no-repeat center / cover;
+                 position: relative;}
+#container header::before {content:""; position: absolute; top: 0; left:0;
+                           width: 100%; height: 300px; position:absolute;
+                           background: rgba(0,0,0,0.3);}
+#container .headerCompany {background-image:url(../images/bgCompany.jpg);}
+#container .headerCostomer {background-image:url(../images/bgCustomer.jpg);}
+#container header h2 {text-align:center; font-size:70px;
+                      color: #fff; padding-top: 100px;
+                      text-transform:uppercase;
+                      position: relative;}
+#subWrap {overflow: hidden; width: 1000px; margin: 50px auto 0;  }
+/* 서브네비 */
+#snb {width: 250px; float :left;}
+#snb h3 { background: rgb(42, 40, 129); color: #fff;
+          text-transform: uppercase; text-align:center;
+          margin-bottom: 15px;
+        font-size: 30px; padding: 30px 0;}
+#snb ul { }
+#snb ul li { }
+#snb ul li a {display:block; height: 50px;
+              border-bottom:1px solid rgb(42, 40, 129);
+              text-transform:uppercase;
+              text-indent:22px; font-size: 15px;
+              line-height:50px; color: rgb(42, 40, 129);
+              background: url(../images/bulletSnb.png) no-repeat 230px center;
+              }
+#snb ul li a:hover { color : rgb(232, 201, 66); border-bottom-color:rgb(232, 201, 66);
+                     background-image: url(../images/bulletSnbOver.png);}
+#snb nav { }
+  /* 서브컨텐츠 */
+#subContent {width: 710px; float :right;}
+#subContent h3 {text-transform:capitalize;
+                color: #ccc;
+                /*font-weight: normal;
+                font-family: "Times New Foman", serif;
+                font-size: 50px; */
+                font: 50px "Times New Foman",serif;}
+/* 서브 company-welcome */
+#subContent figure { float:right; margin: 0 0 10px 10px; text-align: center;}
+#subContent figcaption {color:blue;}
+#subContent p { margin-bottom: 15px; }
+/* 서브 customerCenter-notice */
+#notice {width: 660px;}
+#notice thead th {height: 30px; line-height:30px;
+                  text-align: center;
+                   text-transform: capitalize;
+                   line-height: 30px; font-weight: normal;
+                   color: #fff;
+                   letter-spacing: 0.1em;
+                  background: linear-gradient(#4dabe7 0,#6cbfde 25%, #1e83c4 60%, #1f88aa 100%);
+                  }
+#notice thead th.no { width: 56px; border-radius: 5px 0 0 5px; }
+#notice thead th.title { width: 376px;}
+#notice thead th.write { width: 100px; }
+#notice thead th.date { width: 72px; }
+#notice thead th.read {width: 56px;}
+#notice tbody {text-align: center; font-size:13px;}
+#notice tbody tr {height: 30px;
+                  border-collapse: collapse; border-bottom:1px dotted;}
+#notice tbody tr td .listTitle {width: 376px; white-space: nowrap;
+                             overflow: hidden; text-overflow:ellipsis;}
+#noticeSearch fieldset {padding: 20px 40px 0 360px; position: absolute;}
+#searchBox { width: 220px; height: 20px;
+             border: 2px solid rgb(158, 158, 158);
+             background: rgba(248, 252, 193, 0.5); border-radius: 12px;}
+#searchBtn { width: 80px; height: 26px;
+             background: linear-gradient(#4dabe7 0,#6cbfde 25%, #1e83c4 60%, #1f88aa 100%);
+             color: white; border-radius: 12px;
+             border: 1px solid rgb(158, 158, 158);}
+#pageControl { position:relative; text-align: center;
+              padding-top:80px;}
+#pageControl a {margin: 10px; color: black;}

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#contactUs { position: relative; height: 363px;
+              background : url(../images/slider1.jpg) no-repeat center center/cover;}
+#contactUs::before {content:""; position:absolute;
+                    top:0; left:0;
+                    width: 100%; height:363px;
+                    background: rgba (0, 0, 0, 0.5);}
+#contactUs p { color: white; font-size: 50px;
+               text-transform: uppercase;
+               /* margin: 0 auto; */
+               text-align: center;
+               letter-spacing: 0.02em;
+               /* padding-top:100px; */
+               position:relative; top:100px;
+               /* line-height: 363px; */
+               text-shadow: 0 1px 5px #000;
+               font-weight: bold;
+               }
+#contactUs a { display: block; width: 160px; height: 40px;
+               background: rgb(204, 68, 68);
+               line-height: 40px;
+               text-transform: capitalize;
+               position:relative;
+               text-align:center; margin: 120px auto 0;
+               color: white;
+              }
+#contactUs a:hover {background: rgb(42, 54, 89); color: black;}
+
+#solutionWrap { padding : 50px 0; background: #ebebeb; }
+#solution { width: 930px; margin:0 auto; }
+#solution::after { content:""; display:block; clear: both;  }
+#solution .solution {width: 310px; float: left;
+                     padding: 0 34px 0 100px;
+                     box-sizing: border-box;
+                     background : url(../images/bgSolution.png) no-repeat; }
+/* #solution .hositng {} */
+#solution .security {background-position-x:center;}
+#solution .payment {background-position-x: right;}
+#solution .solution a {color: #333;}
+#solution .solution a h3 { font-size: 16px; }
+#solution .solution a p { font-size: 14px; }
+
+#board {overflow:hidden; width: 1000px; margin: 35px auto 0; }
+#board > section {width: 410px; float: left; margin : 0 40px;}
+#board > section > h3 {height: 21px;
+                       font-size:15px;
+                       background: url(../images/bgBoard.png);
+                     text-indent: 22px;
+                     font-weight:400;}
+/* security news */
+#sec_news h3 span {color:red;}
+#sec_news dl {margin-top: 20px; font-size: 14px;}
+#sec_news dl dt {}
+#sec_news dl dt a {color: red;}
+#sec_news dl dd {margin-bottom: 5px;line-height: 16px;}
+#sec_news dl dd a { color : black;}
+/* news & notice */
+#notice h3 span { color : red;}
+#notice ul {margin-top: 20px; font-size: 14px;
+            }
+#notice ul li {list-style:url(../images/bulletNotice.gif);
+               text-indent:5px;
+               margin-left:20px;
+               border-bottom:1px solid gray;
+               border-bottom-style: dotted;
+               padding: 5px 0;
+               }
+#notice ul li a { color : black; }
+#notice > ul > li > span {position:relative; float:right;}
